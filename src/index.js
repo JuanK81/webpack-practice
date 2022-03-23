@@ -5,4 +5,7 @@ import logo from './assets/_DSC8932.png';
 const logoImg = document.getElementById('logoImg');
 logoImg.src = logo;
 
-console.log(generateJoke())
+const jokeBtn = document.getElementById('jokeBtn');
+jokeBtn.addEventListener('click', generateJoke)
+
+generateJoke()
